@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Thulz Place</string>
+    <string name="action_settings">Settings</string>
+    <string name="addMeat">Add Meat</string>
+    <string name="footer_msg">This is a NGDevelopment Creation (Ndimphiwe Given Bontsi the Founder)</string>
+    <string name="header_msg">Welcome to Tulz place</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="product_name">Menu Types</string>
+    <string name="add_text">Submit</string>
+    <string name="clear_text">Clear</string>
+    <string name="indrediant">Ingrediants</string>
+    <string name="quantity">quantity</string>
+    <string name="product_descr">Menu Name</string>
+    <string name="product_cost">Price</string>
+    <string name="upload_button">Upload</string>
+    <string name="action_refresh">Settings</string>
+    <string name="action_new">Settings</string>
+    <string name="logo_desc">App logo</string>
+    <string name="search">App logo</string>
+    
+ <string name="some_text">
+     Some North American Countries!
+ </string>
+ <string name="some_hint">
+  Type here to filter&#8230;
+ </string>
+    
+
+    <string-array name="sources_list">
+        <item>BBQ</item>
+        <item>Chiken Spice</item>
+        <item>Spice Mecca</item>
+        <item>Cartwrights Medium</item>
+        <item>Local, loved</item>
+        <item>Steak source</item>
+        <item>Fish Spaste</item>        
+        <item>Local is lekker</item>
+    </string-array>
+    <string name="title_activity_adapter">AdapterActivityA</string>
+    <string name="title_activity_fragments">FragmentsActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

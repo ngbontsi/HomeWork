@@ -1,0 +1,8 @@
+Aug 19, 2016 1:43:15 PM com.bontsi.ndiraphutcha.logging.UseLogger doSomeThingAndLog
+SEVERE: Info Log
+Aug 19, 2016 1:43:19 PM com.bontsi.ndiraphutcha.logging.UseLogger doSomeThingAndLog
+SEVERE: Info Log
+Aug 19, 2016 1:43:20 PM com.bontsi.ndiraphutcha.logging.UseLogger doSomeThingAndLog
+WARNING: Info Log
+Aug 19, 2016 1:43:21 PM com.bontsi.ndiraphutcha.logging.UseLogger doSomeThingAndLog
+INFO: Info Log

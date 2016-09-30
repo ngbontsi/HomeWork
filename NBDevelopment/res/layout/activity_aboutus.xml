@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+ android:fitsSystemWindows="true"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+tools:context=".StockActivity">    
+<android.support.v4.widget.DrawerLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/about_home">
+                
+<android.support.design.widget.CoordinatorLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/about_coor">
+    
+	<include android:id="@+id/app_bar" layout="@layout/tool_bar"/>
+
+    <include layout="@layout/content_scrolling" />
+
+     <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_fab"
+        app:layout_anchorGravity="bottom|left|end"
+        />
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+<include
+            android:id="@+id/about_rec"
+            layout="@layout/recycleview"/>
+</android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

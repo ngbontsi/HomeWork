@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
+ <item name="colorButtonNormal">@color/light_blue_100</item>
+ </style>
+ 
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/light_blue_100</item>
+        <item name="colorPrimaryDark">@color/light_blue_100</item>
+        <item name="colorAccent">@color/amber_100</item>
+    </style>
+     <style name="AppTheme.ButtonBorderless" parent="Widget.AppCompat.Button.Borderless.Colored">
+
+</style>
+
+</resources>

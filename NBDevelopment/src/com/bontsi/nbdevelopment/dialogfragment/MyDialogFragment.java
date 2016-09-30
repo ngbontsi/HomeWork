@@ -1,0 +1,56 @@
+package com.bontsi.nbdevelopment.dialogfragment;
+
+import android.os.Bundle;
+import android.support.v4.app.DialogFragment;
+import android.view.KeyEvent;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import com.bontsi.nbdevelopment.R;
+
+public class MyDialogFragment extends DialogFragment implements
+		TextView.OnEditorActionListener {
+
+	private EditText mEditText;
+	private final String screen;
+
+	public interface UserNameListener {
+		void onFinishUserDialog(String user);
+	}
+
+	// Empty constructor required for DialogFragment
+	public MyDialogFragment(String screenName) {
+		screen = screenName;
+	}
+
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		final View view = inflater.inflate(R.layout.fragment_ordernumber,
+				container);
+		mEditText = (EditText) view.findViewById(R.id.username);
+
+		// set this instance as callback for editor action
+		mEditText.setOnEditorActionListener(this);
+		mEditText.requestFocus();
+		getDialog().getWindow().setSoftInputMode(
+				WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
+		getDialog().setTitle("Please enter username");
+
+		return view;
+	}
+
+	@Override
+	public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+		// Return input text to activity
+		final UserNameListener activity = (UserNameListener) getActivity();
+		activity.onFinishUserDialog(mEditText.getText().toString());
+		dismiss();
+		return true;
+	}
+
+}
